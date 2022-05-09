@@ -5,32 +5,52 @@
     <link rel="stylesheet" type="text/css" href="./style.css" />
   </head>
   <body>
-    <nav>
-      <span>SHOPSHOP</span>
-      <span>
-        <button>Products</button>
-        <button>About</button>
-        <button>My Account</button>
-        <button>Cart (0)</button>
-      </span>
-    </nav>
-    <section>
-      <h1>Bonsai</h1>
-      <h2>$19.99</h2>
-      <img src="assets/product1.jpeg" height="50%" width="50%" alt="bonsai tree on edge of table">
-      <img src="assets/product2.jpeg" height="50%" width="50%" alt="bonsai tree up up close in a white planter">
-      <img src="assets/product3.jpeg" height="50%" width="50%" alt="bonsai tree in a white planter">
-      <p>
-        The purpose of bonsai are primarily contemplation for the viewer, and
-        the pleasant exercise of effort and ingenuity for the grower.
-      </p>
-      <p>
-        By contrast with other plant cultivation practices, bonsai is not
-        intended for production of food or for medicine. Instead, bonsai
-        practice focuses on long-term cultivation and shaping of one or more
-        small trees growing in a container.
-      </p>
-      <button>ADD TO CART</button>
-    </section>
+    <div class="container">
+      <div class="navbar layout horizontal">
+        <div class="logo p-1"></div>
+        <ul class="menu layout horizontal p-1">
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Cart</a></li>
+        </ul>
+      </div>
+      <div class="breadcrumb p-1">
+        <ul class="menu layout horizontal layout-left">
+          <li>Home</li>
+          <li>/</li>
+          <li>Household Plants</li>
+          <li>/</li>
+          <li>Bonsai</li>
+        </ul>
+      </div>
+      <div class="product-content layout horizontal">
+        <div class="gallery w-50 p-1">
+          <div class="main-img img" style="background-image: url(./assets/product1.jpeg);"></div>
+          <ul class="layout horizontal">
+            <li class="img" style="background-image: url(./assets/product1.jpeg)"></li>
+            <li class="img" style="background-image: url(./assets/product2.jpeg)"></li>
+            <li class="img" style="background-image: url(./assets/product3.jpeg)"></li>
+          </ul>
+        </div>
+        <div class="product info w-50 p-1">
+          <h1>Bonsai</h1>
+          <span class="price">$19.99</span>
+          <div class="description">
+            <p>
+              The purpose of bonsai are primarily contemplation for the viewer, and
+              the pleasant exercise of effort and ingenuity for the grower.
+            </p>
+            <p>
+              By contrast with other plant cultivation practices, bonsai is not
+              intended for production of food or for medicine. Instead, bonsai
+              practice focuses on long-term cultivation and shaping of one or more
+              small trees growing in a container.
+            </p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
